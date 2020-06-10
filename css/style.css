@@ -81,7 +81,11 @@ body {
 }
 
 .user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   margin-right: 8px;
+  object-fit: cover;
 }
 
 .user-name {
@@ -100,6 +104,24 @@ body {
   display: flex;
   align-items: center;
   margin-left: 17px;
+  position: relative;
+}
+.notification {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: #f5222d;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 16px;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 12px;
+  top: -8px;
+  right: -10px;
 }
 
 .header-icon {
@@ -209,6 +231,9 @@ body {
 .create-post-input {
   width: 100%;
   padding-top: 8px;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .create-post-footer {
   display: flex;
