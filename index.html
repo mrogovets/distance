@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="header-block">
@@ -461,12 +462,25 @@
               </svg>
               <span class="post-button-text">Comment</span>
             </button>
-            <button class="post-button">
-              <svg width="24" height="24" class="post-button-icon">
-                <use xlink:href="img/icons.svg#share"></use>
-              </svg>
-              <span class="post-button-text">Share</span>
-            </button>
+            <div id="dropdown-1" class="dropdown">
+              <button class="post-button share">
+                <!-- button class="post-button" tooltip="Share" -->
+                <svg width="24" height="24" class="post-button-icon">
+                  <use xlink:href="img/icons.svg#share"></use>
+                </svg>
+                <span class="post-button-text">Share</span>
+              </button>
+              <div id="ddBtn-1" class="drop-down-button-footer">
+                <a href="#">Share Now (Only me)</a>
+                <a href="#">Share...</a>
+                <a href="#">Send as Message</a>
+                <a href="#">Share in a group</a>
+                <a href="#">Share on a Friend’s Timeline</a>
+                <a href="#">Share to a Page</a>
+              </div>
+              <!-- /.drop-down-button-footer -->
+            </div>
+            <!-- /.dropdown -->
           </div>
           <!-- /.post-footer -->
         </div>
@@ -525,12 +539,25 @@
               </svg>
               <span class="post-button-text">Comment</span>
             </button>
-            <button class="post-button">
-              <svg width="24" height="24" class="post-button-icon">
-                <use xlink:href="img/icons.svg#share"></use>
-              </svg>
-              <span class="post-button-text">Share</span>
-            </button>
+            <div id="dropdown-2" class="dropdown">
+              <button class="post-button share">
+                <!-- button class="post-button" tooltip="Share" -->
+                <svg width="24" height="24" class="post-button-icon">
+                  <use xlink:href="img/icons.svg#share"></use>
+                </svg>
+                <span class="post-button-text">Share</span>
+              </button>
+              <div id="ddBtn-2" class="drop-down-button-footer">
+                <a href="#">Share Now (Only me)</a>
+                <a href="#">Share...</a>
+                <a href="#">Send as Message</a>
+                <a href="#">Share in a group</a>
+                <a href="#">Share on a Friend’s Timeline</a>
+                <a href="#">Share to a Page</a>
+              </div>
+              <!-- /.drop-down-button-footer -->
+            </div>
+            <!-- /.dropdown -->
           </div>
           <!-- /.post-footer -->
         </div>
@@ -589,12 +616,25 @@
               </svg>
               <span class="post-button-text">Comment</span>
             </button>
-            <button class="post-button">
-              <svg width="24" height="24" class="post-button-icon">
-                <use xlink:href="img/icons.svg#share"></use>
-              </svg>
-              <span class="post-button-text">Share</span>
-            </button>
+            <div id="dropdown-3" class="dropdown">
+              <button class="post-button share">
+                <!-- button class="post-button" tooltip="Share" -->
+                <svg width="24" height="24" class="post-button-icon">
+                  <use xlink:href="img/icons.svg#share"></use>
+                </svg>
+                <span class="post-button-text">Share</span>
+              </button>
+              <div id="ddBtn-3" class="drop-down-button-footer">
+                <a href="#">Share Now (Only me)</a>
+                <a href="#">Share...</a>
+                <a href="#">Send as Message</a>
+                <a href="#">Share in a group</a>
+                <a href="#">Share on a Friend’s Timeline</a>
+                <a href="#">Share to a Page</a>
+              </div>
+              <!-- /.drop-down-button-footer -->
+            </div>
+            <!-- /.dropdown -->
           </div>
           <!-- /.post-footer -->
         </div>
@@ -644,10 +684,73 @@
             </div>
           </a>
           <!-- /.stories-item -->
+          <a href="#" class="story-triang">
+            <svg with="16" height="16" class="triang">
+              <use xlink:href="img/icons.svg#triang"></use>
+            </svg>
+            <span class="story-see-more">See more...</span>
+          </a>
         </div>
         <!-- /.stories -->
+        <div class="b-day">
+          <svg width="24" height="24" class="b-day-icon">
+            <use xlink:href="img/icons.svg#b-day-icon"></use>
+          </svg>
+          <span class="b-day-title">
+            <span class="user-name">John Doe</span>
+            <span class="bd-today">’s birthday is today</span>
+          </span>
+        </div>
+        <!-- /.b-day -->
+        <div class="your-page">
+          <div class="header-your-page">
+            <div class="your-page-title">Your page</div>
+            <button class="your-page-button" tooltip="Options">
+              <svg width="24" height="24" class="post-button-icon">
+                <use xlink:href="img/icons.svg#dots">...</use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.header-your-page -->
+          <div class="body-your-page">
+            <div class="your-page-item">
+              <div class="your-page-image concuria"></div>
+              <div class="your-page-item-text">
+                <span class="your-page-body-title">Concuria</span>
+                <div class="your-page-messages">
+                  <svg width="14" height="14" class="body-messages">
+                    <use xlink:href="img/icons.svg#chat"></use>
+                  </svg>
+                  <span class="messages">Messages</span>
+                </div>
+                <div class="your-page-notifications">
+                  <svg width="14" height="14" class="body-messages">
+                    <use xlink:href="img/icons.svg#bell"></use>
+                  </svg>
+                  <span class="notifications">Notifications</span>
+                  <span class="notification-counter">1</span>
+                </div>
+              </div>
+            </div>
+            <!-- /.your-page-item -->
+          </div>
+          <!-- /.body-your-page -->
+          <div class="footer-your-page">
+            <div class="footer-buttons">
+              <button class="footer-your-page-button active">Likes</button>
+              <button class="footer-your-page-button">Views</button>
+              <button class="footer-your-page-button">Posts</button>
+            </div>
+            <div class="likes-counter">
+              <span class="likes-counter-all">262</span>
+              <span class="likes-counter-week">5 likes this week</span>
+            </div>
+          </div>
+          <!-- /.footer-your-page -->
+        </div>
+        <!-- /.your-page -->
       </div>
-      <!-- /.rigth-sidebar -->
+      <!-- /.right-sidebar -->
     </div>
     <script src="./js/main.js"></script>
   </body>
